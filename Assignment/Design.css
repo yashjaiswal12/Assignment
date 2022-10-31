@@ -1,0 +1,22 @@
+.form{
+	display:flex;
+	justify-content:center;
+}
+
+#button{
+	text-align:center;
+}
+
+#credentials{
+	text-align:center;
+}
+
+#link{
+	text-align:right;
+	padding:10px;
+}
+
+#regbtn{
+		display:flex;
+		justify-content:center;
+}
