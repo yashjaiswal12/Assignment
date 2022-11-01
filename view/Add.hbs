@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="/addstudent"  >
+   <h3>ADD STUDENT</h3>
+   
+    <hr>
+
+	<label for="stud-id"><b>Student ID</b></label>
+    <input type="text" placeholder="Enter Student ID" name="id1" id="id1" required>
+
+    <label for="name"><b>Student Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    <label for="stud-percentage"><b>Enter Percentage</b></label>
+    <input type="text" placeholder="Enter Percentage" name="percentage" id="percentage" required>
+	
+	<label for="stud-city"><b>Enter City</b></label>
+    <input type="text" placeholder="Enter City Name" name="city" id="city" required>
+   
+    <button type="submit" class="registerbtn">ADD STUDENT</button>
+
+  
+    <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+     
+     {{#if mesg}}
+     <h3>Data Inserted</h3>
+     {{/if}}
+
+      {{#if checkmesg}}
+     <h3>Student record is already present!</h3>
+     {{/if}}
+</form>
+</div>
+</body>
+</html>
