@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <form action="/deletestudent">
+   <h3>DELETE STUDENT</h3>
+   
+    <hr>
+ 
+    <label for="stud-id"><b>Student ID</b></label>
+    <input type="text" placeholder="Enter student id" name="id1" id="id1" required>
+
+    <button type="submit" class="registerbtn">DELETE STUDENT</button>
+    <a href="./" style="color:black">BACK TO HOME PAGE</a>
+
+    <br>
+    {{#if mesg1}}
+    <h3>Data deleted!</h3>
+    {{/if}}
+
+     {{#if mesg2}}
+    <h3>Not found!</h3>
+    {{/if}}
+    </form>
+  </div>
+</body>
+</html>
